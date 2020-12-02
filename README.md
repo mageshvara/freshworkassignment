@@ -23,3 +23,37 @@ Language i have used NODEJS
 
 Go through the code.js,index.js file and output folder that are attached here with in order to understand clearly how 
 the code works and how to perform operations in this.
+
+steps:
+  The CRD (create,read,delete) operation performing functions are present in index.js file.
+  In code.js file i have imported the index.js file so from here we can make use of those functionality that present in the index file.
+  The first step is to import index.js functions:
+      var { create,read,delete1} = require('./index');
+  The second step is to create a new key-value pair for that we use create function:
+     Note:we have to pass parameters like key,value and timestamp value.
+    --var create1 = create("magesh",10,20000);
+          magesh-is the key
+          10 is the value
+          2000 is the timestamp      
+      using this command the create function in index.js get executed and the key get stored in data.json.
+          {"magesh":{"value":10,"timestamp":1606881772088}}
+      Note: the key must contain only alphabets and also its length should not exceed 32
+   The third step is to read the value of the key for this provide the key as a parameter to the read function.
+       Note:provide the key as a parameter that already exist or else it display error msg like "Key not found"
+     --var read1=read("magesh");
+     This will invoke the read function in index.js file.which returns the key value.
+         function read(key)
+         {
+             returns value; 
+         }
+   The final step is to perform delete opertation here we has to provide the key as the parameter.
+         Note:provide the key as a parameter that already exist or else it display error msg like "Key not found"
+    --var deletekey1=delete1("magesh");
+         This will invoke the delete function in index.js file.which deletes the key in data.json and return a msg like 
+         "Key successfully deleted".
+
+         function delete1(key)
+         {
+             returns "Key successfully deleted"; 
+         }        
+ I have provided the output screen shots for the better understaning.
