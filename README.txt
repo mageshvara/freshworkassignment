@@ -36,6 +36,11 @@ steps:
           10 is the value
           2000 is the timestamp      
       using this command the create function in index.js get executed and the key get stored in data.json.
+           index.js:
+           function create(key,value,timestamp)
+           {
+           }
+           data.json:
           {"magesh":{"value":10,"timestamp":1606881772088}}
       Note: the key must contain only alphabets and also its length should not exceed 32
    The third step is to read the value of the key for this provide the key as a parameter to the read function.
@@ -51,8 +56,7 @@ steps:
     --var deletekey1=delete1("magesh");
          This will invoke the delete function in index.js file.which deletes the key in data.json and return a msg like 
          "Key successfully deleted".
-
-         function delete1(key)
+       function delete1(key)
          {
              returns "Key successfully deleted"; 
          }        
