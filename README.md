@@ -21,5 +21,5 @@ The data store will also support the following non-functional requirements.
 
 Language i have used NODEJS
 
-Go through the sample.js,index.js file and output folder that are attached here with in order to understand clearly how 
+Go through the code.js,index.js file and output folder that are attached here with in order to understand clearly how 
 the code works and how to perform operations in this.
