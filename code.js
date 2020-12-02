@@ -21,6 +21,11 @@ var deletekey1=delete1("sai");
 
 
 
+
+
+
+
+
 //using worker threads we calling the functions in index.js
 
 const { Worker } = require('worker_threads') 
